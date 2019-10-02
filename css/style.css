@@ -123,6 +123,24 @@ body {
   margin: 0 auto;
 }
 
+.contact {
+   text-align: center;
+  font-size: 45px;
+  padding-bottom: 5px;
+
+}
+
+input[type=text], select {
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
 .content-heading>h1 {
   color: #dddddd;
   padding: 110px 30px;

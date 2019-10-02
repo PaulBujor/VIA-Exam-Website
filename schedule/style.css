@@ -155,6 +155,6 @@ td,th{
 }
 .table-exam{
     text-align: center;
-    text-emphasis-style: filled
+    text-emphasis-style: filled;
     background-color:fuchsia;
 }

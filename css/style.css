@@ -145,6 +145,35 @@ body {
   margin: 0 auto;
 }
 
+.contact {
+   text-align: center;
+  font-size: 45px;
+  padding-bottom: 5px;
+
+}
+
+input[type=text], select {
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+.content-heading>h1 {
+  color: #dddddd;
+  padding: 110px 30px;
+}
+
+.contact-heading>h1 {
+  color: #4d4d4d;
+  padding: 20px 30px;
+  text-align: center;
+}
+
 .news {
   width: 65%;
   float: left;
@@ -162,6 +191,19 @@ body {
 h2 {
   margin: 5px 0 10px 0;
 }
+
+.contact {
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 5px;
+}
+
+.field-label {
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 5px;
+}
+
 
 .featured h3 {
   padding: 5px;

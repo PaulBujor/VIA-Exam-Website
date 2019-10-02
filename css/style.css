@@ -73,6 +73,7 @@ body {
 .content {
   clear: both;
   width: 80%;
+  height: 100%;
   margin: 100px 10% 0 10%;
 }
 
@@ -139,4 +140,15 @@ h2 {
 .news-link{
   text-decoration: none;
   overflow: auto;
+}
+
+.footer{
+  background: #7D7D7D;
+  clear: both;
+}
+
+.subfooter{
+  float: left;
+  font-family: sans-serif;
+
 }

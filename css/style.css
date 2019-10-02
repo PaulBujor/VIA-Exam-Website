@@ -147,13 +147,24 @@ body {
 
 .contact {
    text-align: center;
-  font-size: 45px;
+  font-size: 20px;
   padding-bottom: 5px;
+  clear: both;
+  width: 300px;
+margin: auto;
+}
 
+.contact p {
+  text-align: left;
+margin: 3px 0;
+}
+
+.contact h3 {
+font-size: 50px;
 }
 
 input[type=text], select {
-  width: auto;
+  width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -192,11 +203,7 @@ h2 {
   margin: 5px 0 10px 0;
 }
 
-.contact {
-  text-align: center;
-  font-size: 45px;
-  padding-bottom: 5px;
-}
+
 
 .field-label {
   text-align: center;

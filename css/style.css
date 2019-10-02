@@ -95,6 +95,11 @@ body {
   padding: 110px 30px;
 }
 
+.contact-heading > h1 {
+  color: #4d4d4d;
+  padding: 110px 30px;
+}
+
 .news {
   width: 65%;
   float: left;

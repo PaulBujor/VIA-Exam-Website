@@ -144,6 +144,7 @@ table{
     width: 80%;
 }
 table, th, td {
+    
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -158,3 +159,28 @@ td,th{
     text-emphasis-style: filled;
     background-color:fuchsia;
 }
+.arrows-month{
+    overflow: hidden;
+    clear: both;  left: 38%; margin-bottom: 5px;
+    position:relative;
+   
+   
+    
+   
+    
+    
+}
+.arrows-month img,h2{
+  float: left
+    
+}
+.arrows-month h2{
+  margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.arrows-month img{
+  margin-top: 5px;
+   
+}
+

@@ -53,8 +53,6 @@ body {
   font-size: 1.4em;
   color: #4d4d4d;
   font-weight: bold;
-  transition: 0.1s;
-  border-bottom: 0px black solid;
   transition: 0.2s;
   border-bottom: 2px #D7D7D7 solid;
 }

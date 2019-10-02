@@ -169,9 +169,15 @@ h2 {
   float: left;
 }
 
-.subfooter > ul{
-    text-decoration: none;
+.subfooter ul {
+  padding: 0;
 }
+
+.subfooter li {
+  list-style: none;
+  color: white;
+}
+
 
 #textfooter{
   font-family: sans-serif;

@@ -83,9 +83,20 @@ body {
   background-repeat: no-repeat;
   transition: 0.3s;
 }
+.contact-heading {
+  height: 250px;
+  background-image: url("../images/contact-page.png");
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
 
 .content-heading > h1 {
   color: #dddddd;
+  padding: 110px 30px;
+}
+
+.contact-heading > h1 {
+  color: #4d4d4d;
   padding: 110px 30px;
 }
 

@@ -154,6 +154,7 @@ h2 {
 }
 
 .footer{
+  position: static;
   background: #7D7D7D;
   width: 100%;
   height: 200px;
@@ -168,6 +169,23 @@ h2 {
 .subfooter{
   float: left;
 }
+
+#subfooter-left{
+}
+
+#subfooter-centre{
+  position: relative;
+  left: 37%;
+  right: 37%; 
+}
+
+
+#subfooter-right{
+  float: right;
+
+}
+
+
 
 .subfooter ul {
   padding: 0;

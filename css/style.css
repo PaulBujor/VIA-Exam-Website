@@ -226,14 +226,14 @@ h2 {
   height: 200px;
   background: #9CD2C7;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: 0.3s ease-in-out;
 }
 
 .news-article:hover {
   background: #32C8AA;
   transition: 0.3s ease-in-out;
-  box-shadow: 0 0px 3px 1px #9d9d9d;
+  box-shadow: 0px 3px 3px 1px #9d9d9d;
 }
 
 .news-thumbnail {
@@ -263,7 +263,7 @@ h2 {
   height: 250px;
   background: #9CD2C7;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: 0.3s ease-in-out;
   float: left;
   margin-right: 3%
@@ -272,10 +272,11 @@ h2 {
 .featured-article:hover {
   background: #32C8AA;
   transition: 0.3s ease-in-out;
-  box-shadow: 0 0px 3px 1px #9d9d9d;
+  box-shadow: 0px 3px 3px 1px #9d9d9d;
 }
 
 .featured-article h3 {
+  font-size: 2vh; /*vh = % of viewport height */
   margin: 5px;
   text-align: center;
 }

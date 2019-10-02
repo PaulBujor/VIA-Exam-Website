@@ -152,6 +152,19 @@ h2 {
   margin: 5px 0 10px 0;
 }
 
+.contact {
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 5px;
+}
+
+.field-label {
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 5px;
+}
+
+
 .featured h3 {
   padding: 5px;
 }

@@ -22,12 +22,7 @@ td,th{
     overflow: hidden;
     clear: both;  left: 38%; margin-bottom: 5px;
     position:relative;
-   
-   
-    
-   
-    
-    
+  
 }
 .arrows-month img,h2{
   float: left
@@ -43,3 +38,6 @@ td,th{
    
 }
 
+.div-table{
+    margin-bottom: 80px;
+}

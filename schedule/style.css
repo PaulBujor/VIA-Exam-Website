@@ -1,150 +1,9 @@
-* {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  color: #4d4d4d;
-}
 
-body {
-  margin: 0;
-  background-color: #D7D7D7;
-}
-
-.header {
-  width: 100%;
-  background-color: #D7D7D7;
-  height: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.header-container {
-  width: 80%;
-  margin: 0 10%;
-}
-
-.logo {
-  float: left;
-}
-
-.logo > a > img {
-  height: 90px;
-  margin: 5px 0;
-}
-
-.menu {
-  float: right;
-  margin: 15px 0 auto 0;
-}
-
-.menu-list {
-  list-style: none;
-  clear: both;
-}
-
-.menu-list li {
-  float: left;
-  padding: 5px;
-  margin: 0 5px;
-}
-
-.menu-list a {
-  text-decoration: none;
-  font-size: 1.4em;
-  color: #4d4d4d;
-  font-weight: bold;
-  transition: 0.1s;
-  border-bottom: 0px black solid;
-}
-
-.menu-list a:hover {
-  text-decoration: none;
-  color: #202020;
-  transition: 0.2s;
-  border-bottom: 1px black solid;
-}
-
-#current {
-  text-decoration: none;
-  color:#10a888;
-  border-bottom: 2px #21b799 solid;
-}
-
-.content {
-  clear: both;
-  width: 80%;
-  margin: 100px 10% 0 10%;
-}
-
-.content-heading {
-  height: 250px;
-  background-image: url("../images/content-heading.jpg");
-  background-repeat: no-repeat;
-  transition: 0.3s;
-}
-
-.content-heading > h1 {
-  color: #dddddd;
-  padding: 110px 30px;
-}
-
-.news {
-  width: 65%;
-  float: left;
-  padding: 10px 10px 10px 0;
-  height: 100px;
-}
-
-.featured {
-  width: 35%;
-  float: left;
-  height: 100px;
-  padding: 10px 0;
-}
-
-h2 {
-  margin: 5px 0 10px 0;
-}
-
-.featured h3 {
-  padding: 5px;
-}
-
-
-.news-article {
-  width: 100%;
-  height: 200px;
-  background: #9CD2C7;
-  overflow: hidden;
-  margin-bottom: 20px;
-  transition: 0.3s ease-in-out;
-}
-
-.news-article:hover {
-  background: #32C8AA;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 4px 3px 1px #9d9d9d;
-}
-
-.news-thumbnail {
-  float: left;
-  width: 200px;
-  height: 200px;
-}
-
-.news-info {
-  margin: 10px;
-}
-
-.news-link{
-  text-decoration: none;
-  overflow: auto;
-}
 table{
     width: 80%;
 }
 table, th, td {
-    
+
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -163,24 +22,29 @@ td,th{
     overflow: hidden;
     clear: both;  left: 38%; margin-bottom: 5px;
     position:relative;
-   
-   
-    
-   
-    
-    
 }
-.arrows-month img,h2{
-  float: left
-    
+
+.arrows-month > #leftarrow, .arrows-month > h2 {
+  float: left;
+}
+
+.search-form {
+  float: left;
 }
 .arrows-month h2{
   margin-left: 5px;
     margin-right: 5px;
-    
+
 }
 .arrows-month img{
   margin-top: 5px;
-   
 }
 
+.div-table{
+    margin-bottom: 80px;
+}
+.buttons{
+    cursor: pointer;
+    background-color: #D7D7D7;
+    float: left;
+}

@@ -85,10 +85,10 @@ body {
 }
 
 .contact-heading {
-  height: 350px;
+  height: 300px;
   background-image: url("../images/contact-page.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .content-heading>h1 {
-  color: #dddddd;
+  color: #4d4d4d;
   padding: 110px 30px;
   margin-top: 0;
 }

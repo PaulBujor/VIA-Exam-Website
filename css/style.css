@@ -377,7 +377,7 @@ h4 {
 
 }
 
-.advice-square{
+.advice-square {
   height: 80px;
   width: 80px;
   background-color: #32C8AA;
@@ -394,6 +394,7 @@ h4 {
 .advice-heading > p {
   font-size: 1.7em;
   font-weight: bold;
+  text-align: center;
 }
 
 .advice-heading {
@@ -423,4 +424,21 @@ h4 {
 .advice:hover {
   transition: 0.2s ease-in-out;
   box-shadow: 0 4px 3px 1px #9d9d9d;
+}
+
+.blank-space {
+  height: 100px;
+}
+
+.video-left {
+  float: left;
+  clear: right;
+  left: 7%;
+  position: relative;
+}
+
+.video-right {
+  float: right;
+  right: 7%;
+  position: relative;
 }

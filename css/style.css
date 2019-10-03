@@ -180,6 +180,17 @@ input[type=text], select ,textarea {
   box-sizing: border-box;
 }
 
+textarea {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
 .content-heading>h1 {
   color: #dddddd;
   padding: 110px 30px;

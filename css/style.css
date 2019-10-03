@@ -311,3 +311,57 @@ h4 {
   margin-right: 7px;
   margin-bottom: 7px;
 }
+.advice{
+  width: 100%;
+  height: 80px;
+  background-color: #9CD2C7;
+  margin-bottom: 20px;
+}
+
+.advice-square{
+  height: 80px;
+  width: 80px;
+  background-color: #32C8AA;
+  float: left;
+}
+
+.advice-square p {
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.advice-heading > p {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.advice-heading {
+  padding: 10px;
+  padding-left: 0;
+}
+
+.advice-container {
+  margin-left: 85px;
+  height: 80px;
+  overflow: auto;
+}
+
+.advice-container-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 1px;
+  margin-top: 3px;
+}
+
+.advice-container-text {
+  font-size: 0.9em;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.advice:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 4px 3px 1px #9d9d9d;
+}

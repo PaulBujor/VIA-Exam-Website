@@ -43,3 +43,8 @@ td,th{
 .div-table{
     margin-bottom: 80px;
 }
+.buttons{
+    cursor: pointer;
+    background-color: #D7D7D7;
+    float: left;
+}

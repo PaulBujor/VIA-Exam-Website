@@ -1,0 +1,9 @@
+1. Menu -> hidden menu accesed by button
+2. Footer change - possibliy remove sitemap
+3. Advice - make text expand the div it is in, make videos smaller
+4. News - text goes under the image
+5. Featured section goes under News
+6. Will subtract from margins first before switching to mobile interface
+7. Calendar fix
+8. Smaller header
+9. Contact person cards fix

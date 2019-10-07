@@ -8,9 +8,15 @@
   <title>Via Exam - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--only javascript made to not load transitions until page is loaded-->
+  <script type="text/javascript">
+    $(window).load(function() {
+      $("body").removeClass("preload");
+    });
+  </script>
 </head>
 
-<body>
+<body class="preload">
   <div class="header">
     <!-- will shrink on scroll with js to height of button +5/10px on top and bottom-->
     <div class="header-container">
@@ -85,41 +91,41 @@
       <div class="featured">
         <h2>Featured</h2>
 
-          <a class="featured-link" href="news-article/index.html">
-            <div class="featured-article">
-              <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
-              <div class="featured-info">
-                <h3>Featured Article Title</h3>
-                </div>
+        <a class="featured-link" href="news-article/index.html">
+          <div class="featured-article">
+            <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
+            <div class="featured-info">
+              <h3>Featured Article Title</h3>
             </div>
-          </a>
+          </div>
+        </a>
 
-          <a class="featured-link" href="news-article/index.html">
-            <div class="featured-article">
-              <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
-              <div class="featured-info">
-                <h3>Featured Article Title</h3>
-                </div>
+        <a class="featured-link" href="news-article/index.html">
+          <div class="featured-article">
+            <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
+            <div class="featured-info">
+              <h3>Featured Article Title</h3>
             </div>
-          </a>
+          </div>
+        </a>
 
-          <a class="featured-link" href="news-article/index.html">
-            <div class="featured-article">
-              <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
-              <div class="featured-info">
-                <h3>Featured Article Title</h3>
-                </div>
+        <a class="featured-link" href="news-article/index.html">
+          <div class="featured-article">
+            <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
+            <div class="featured-info">
+              <h3>Featured Article Title</h3>
             </div>
-          </a>
+          </div>
+        </a>
 
-          <a class="featured-link" href="news-article/index.html">
-            <div class="featured-article">
-              <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
-              <div class="featured-info">
-                <h3>Featured Article Title</h3>
-              </div>
+        <a class="featured-link" href="news-article/index.html">
+          <div class="featured-article">
+            <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
+            <div class="featured-info">
+              <h3>Featured Article Title</h3>
             </div>
-          </a>
+          </div>
+        </a>
 
       </div>
     </div>

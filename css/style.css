@@ -180,28 +180,28 @@ input[type=text],select  {
 }
 
 input[type=submit] {
-   padding:12px 120px; 
-    background:#ccc; 
+   padding:12px 120px;
+    background:#ccc;
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 8px;
-    font-size: 20px; 
+    font-size: 20px;
     color: #4d4d4d;
  transition: 0.3s ease-in-out;
 }
 
 #searchSubmit {
-   padding:5px 20px; 
-    background:#ccc; 
+   padding:5px 20px;
+    background:#ccc;
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 8px;
-    font-size: 1.25em; 
+    font-size: 1.25em;
     color: #4d4d4d;
  transition: 0.3s ease-in-out;
-    
+
 }
 #searchSubmit:hover {
   background: #32C8AA;
@@ -294,7 +294,7 @@ h2 {
 
 .featured-article {
   width: 47%;
-  height: 250px;
+  height: 200px;
   background: #9CD2C7;
   overflow: hidden;
   margin-bottom: 10px;
@@ -317,7 +317,7 @@ h2 {
 
 .featured-thumbnail {
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 
 .footer {
@@ -416,6 +416,11 @@ h4 {
 .advice-heading {
   padding: 10px;
   padding-left: 0;
+}
+
+.article-heading-image {
+  width: 100%;
+  height: 250px;
 }
 
 .advice-container {

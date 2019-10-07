@@ -45,5 +45,6 @@ td,th{
 .buttons{
     cursor: pointer;
     background-color: #D7D7D7;
+     border: none;
     float: left;
 }

@@ -7,11 +7,18 @@
 body {
   margin: 0;
   background-color: #D7D7D7;
+  scroll-behavior: smooth;
+}
+
+preload * {
+  transition: none !important;
 }
 
 .header {
   width: 100%;
-  background-color: #7D7D7D;
+  background-color: rgba(215,215,215,0.7);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
   height: 100px;
   position: fixed;
   top: 0;
@@ -51,22 +58,23 @@ body {
 .menu-list a {
   text-decoration: none;
   font-size: 1.4em;
-  color: #D7D7D7;
+  color: #4d4d4d;
   font-weight: bold;
   transition: 0.2s;
-  border-bottom: 2px #7D7D7D solid;
+  border-bottom: 2px rgba(50,200,170,0) solid;
 }
 
 .menu-list a:hover {
   text-decoration: none;
+  color: #222222;
   transition: 0.2s;
-  border-bottom: 2px #9CD2C7 solid;
+  border-bottom: 2px rgba(50,200,170,1) solid;
 }
 
 #current {
   text-decoration: none;
-  color: #9CD2C7;
-  border-bottom: 2px #9CD2C7 solid;
+  color: #32C8AA !important;
+  border-bottom: 2px #32C8AA solid;
 }
 
 .content {
@@ -192,28 +200,28 @@ input[type=text],select  {
 }
 
 input[type=submit] {
-   padding:12px 120px; 
-    background:#ccc; 
+   padding:12px 120px;
+    background:#ccc;
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 8px;
-    font-size: 20px; 
+    font-size: 20px;
     color: #4d4d4d;
  transition: 0.3s ease-in-out;
 }
 
 #searchSubmit {
-   padding:5px 20px; 
-    background:#ccc; 
+   padding:5px 20px;
+    background:#ccc;
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 8px;
-    font-size: 1.25em; 
+    font-size: 1.25em;
     color: #4d4d4d;
  transition: 0.3s ease-in-out;
-    
+
 }
 #searchSubmit:hover {
   background: #32C8AA;
@@ -306,7 +314,7 @@ h2 {
 
 .featured-article {
   width: 47%;
-  height: 250px;
+  height: 200px;
   background: #9CD2C7;
   overflow: hidden;
   margin-bottom: 10px;
@@ -329,7 +337,7 @@ h2 {
 
 .featured-thumbnail {
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 
 .footer {
@@ -428,6 +436,11 @@ h4 {
 .advice-heading {
   padding: 10px;
   padding-left: 0;
+}
+
+.article-heading-image {
+  width: 100%;
+  height: 250px;
 }
 
 .advice-container {

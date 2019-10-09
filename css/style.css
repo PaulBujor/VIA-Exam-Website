@@ -10,9 +10,11 @@ body {
   scroll-behavior: smooth;
 }
 
+/*
 preload * {
   transition: none !important;
 }
+*/
 
 .header {
   width: 100%;
@@ -185,7 +187,7 @@ margin: 3px 0;
 
 .contact h3 {
 font-size: 50px;
-} 
+}
 
 
 

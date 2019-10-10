@@ -18,13 +18,40 @@ preload * {
 
 .header {
   width: 100%;
-  background-color: rgba(215,215,215,0.7);
+  background-color: rgba(215,215,215,0.6);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   height: 100px;
   position: fixed;
   top: 0;
   left: 0;
+}
+
+/*Header Styling for Mozilla*/
+@-moz-document url-prefix() {
+  .header {
+    background-color: rgba(215,215,215,0.9) !important;
+  }
+}
+
+/*Header Styling for Safari*/
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+  .header {
+    background-color: rgba(215,215,215,0.9) !important;
+  }
+}}
+
+/*Header Styling for classic Edge*/
+@supports (-ms-ime-align:auto) {
+  .header {
+    background-color: rgba(215,215,215,0.9) !important;
+  }
+}
+
+/*Header Styling for Internet Explorer*/
+_:-ms-fullscreen, :root .header {
+  background-color: rgba(215,215,215,0.9) !important;
 }
 
 .header-container {

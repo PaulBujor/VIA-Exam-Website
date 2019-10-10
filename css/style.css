@@ -10,11 +10,10 @@ body {
   scroll-behavior: smooth;
 }
 
-/*
 preload * {
   transition: none !important;
 }
-*/
+
 .header {
   width: 100%;
   background-color: rgba(215, 215, 215, 0.6);

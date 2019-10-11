@@ -19,8 +19,10 @@ td,th{
 }
 .arrows-month{
     overflow: hidden;
-    clear: both;  left: 38%; margin-bottom: 5px;
-    position:relative;
+    clear: both;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
 .arrows-month > #leftarrow, .arrows-month > h2 {
@@ -47,4 +49,5 @@ td,th{
     background-color: #D7D7D7;
      border: none;
     float: left;
+    z-index: 2;
 }

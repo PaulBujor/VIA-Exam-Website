@@ -89,7 +89,7 @@ _:-ms-fullscreen, :root .header {
   font-size: 1.4em;
   color: #4d4d4d;
   font-weight: bold;
-  transition: 0.2s;
+  transition: 0.4s;
   border-bottom: 2px rgba(50,200,170,0) solid;
 }
 
@@ -359,7 +359,7 @@ h2 {
 }
 
 .featured-article h3 {
-  font-size: 2vh; /*vh = % of viewport height */
+  font-size: 1em;
   margin: 5px;
   text-align: center;
 }

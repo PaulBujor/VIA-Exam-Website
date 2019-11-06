@@ -25,10 +25,6 @@ preload * {
 
 }
 
-#logo {
-  height: 80px;
-}
-
 /*Header Styling for Mozilla*/
 @-moz-document url-prefix() {
   .header {

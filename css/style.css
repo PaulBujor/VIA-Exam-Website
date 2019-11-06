@@ -56,11 +56,6 @@ _:-ms-fullscreen, :root .header {
   background-color: rgba(215,215,215,0.9) !important;
 }
 
-.header-container {
-
-  margin: 0 10%;
-}
-
 .logo {
 
 }
@@ -73,15 +68,6 @@ _:-ms-fullscreen, :root .header {
 .menu {
 
   margin: 15px 0 auto 0;
-}
-
-.menu-list {
-  list-style: none;
-}
-
-.menu-list li {
-  padding: 5px;
-  margin: 0 5px;
 }
 
 .menu-list a {
@@ -107,9 +93,7 @@ _:-ms-fullscreen, :root .header {
 }
 
 .content {
-  
-  
-  margin: 100px 10% 0 10%;
+  margin: 0px 10% 0 10%;
   overflow: hidden;
 }
 
@@ -161,20 +145,20 @@ _:-ms-fullscreen, :root .header {
 }
 
 .team hr {
-  
+
   border: solid #4d4d4d;
 }
 
 .team-member {
-  
+
   height: 360px;
   background: #9CD2C7;
   margin: 15px;
-  
+
 }
 
 .team-member img {
-  
+
   height: 250px;
 }
 
@@ -185,7 +169,7 @@ _:-ms-fullscreen, :root .header {
 
 .memberss {
   margin: 0 auto;
-  
+
 }
 
 .contact {
@@ -442,6 +426,8 @@ h4 {
   height: 80px;
   background-color: #32C8AA;
   float: left;
+  width: 80px;
+
 }
 
 .advice-square p {

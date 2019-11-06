@@ -4,28 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
   <title>Via Exam - Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> </script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <div class="header">
-    <div class="header-container">
-      <div class="logo">
-        <a href="#"><img src="logo.png" alt="VIA Exam Logo"></a>
-      </div>
-      <div class="menu">
-        <ul class="menu-list">
-          <li><a id="current" href="#">HOME</a></li>
-          <li><a href="schedule/index.html">SCHEDULE</a></li>
-          <li><a href="advice/index.html">ADVICE</a></li>
-          <li><a href="info/index.html">INFO</a></li>
-          <li><a href="contact/index.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
+
+<nav class="header-container navbar navbar-expand-sm">
+  <a class="navbar-brand" href="#"><img id="logo" src="logo.png" alt="VIA Exam Logo"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-traget="#myNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse menu" id="myNavbar">
+    <ul class="row align-itemsf-end navbar-nav menu-list">
+      <li class="nav-item active"><a id="current" href="#">HOME</a></li>
+      <li class="nav-item"><a href="schedule/index.html">SCHEDULE</a></li>
+      <li class="nav-item"><a href="advice/index.html">ADVICE</a></li>
+      <li class="nav-item"><a href="info/index.html">INFO</a></li>
+      <li class="nav-item"><a href="contact/index.html">CONTACT</a></li>
+    </ul>
+
+  </div>
+</nav>
   </div>
 
   <div class="content">

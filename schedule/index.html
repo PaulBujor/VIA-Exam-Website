@@ -9,10 +9,17 @@
   <title>Via Exam - Schedule</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script type="text/javascript">
+    $(window).load(function() {
+      $("body").removeClass("preload");
+    });
+  </script>
 </head>
 
-<body>
+<body class="preload">
   <div class="header">
+    <!-- will shrink on scroll with js to height of button +5/10px on top and bottom-->
     <div class="header-container">
       <div class="logo">
         <a href="../index.html"><img src="../logo.png" alt="VIA Exam Logo"></a>
@@ -31,7 +38,7 @@
 
   <div class="content">
     <div class="content-container">
-      <div>
+      <div class="news">
         <h2>VIA Search</h2>
         <form class="search-form" action="empty.php">
           Enter your student ID<br>

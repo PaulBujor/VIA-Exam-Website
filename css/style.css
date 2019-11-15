@@ -23,8 +23,6 @@ preload * {
   backdrop-filter: blur(5px);
   height: 100px;
 
-}
-
 /*Header Styling for Mozilla*/
 @-moz-document url-prefix() {
   .header {

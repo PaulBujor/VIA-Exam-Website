@@ -10,48 +10,29 @@ body {
   scroll-behavior: smooth;
 }
 
-/*
 preload * {
   transition: none !important;
 }
-*/
 
 .header {
-
-  background-color: rgba(215,215,215,0.6);
+  width: 100%;
+  background-color: rgba(215, 215, 215, 0.6);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   height: 100px;
-
-/*Header Styling for Mozilla*/
-@-moz-document url-prefix() {
-  .header {
-    background-color: rgba(215,215,215,0.9) !important;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-/*Header Styling for Safari*/
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
-{ @media {
-  .header {
-    background-color: rgba(215,215,215,0.9) !important;
-  }
-}}
-
-/*Header Styling for classic Edge*/
-@supports (-ms-ime-align:auto) {
-  .header {
-    background-color: rgba(215,215,215,0.9) !important;
-  }
-}
-
-/*Header Styling for Internet Explorer*/
-_:-ms-fullscreen, :root .header {
-  background-color: rgba(215,215,215,0.9) !important;
+.header-container {
+  width: 80%;
+  margin: 0 10%;
 }
 
 .logo {
-
+  float: left;
 }
 
 .logo>a>img {
@@ -60,8 +41,20 @@ _:-ms-fullscreen, :root .header {
 }
 
 .menu {
+  float: right;
+  margin: 20px 0 auto 0;
+}
 
-  margin: 15px 0 auto 0;
+.menu-list {
+  width: fit-content;
+  list-style: none;
+  clear: both;
+}
+
+.menu-list li {
+  float: left;
+  padding: 5px;
+  margin: 0 5px;
 }
 
 .menu-list a {
@@ -69,15 +62,15 @@ _:-ms-fullscreen, :root .header {
   font-size: 1.4em;
   color: #4d4d4d;
   font-weight: bold;
-  transition: 0.4s;
-  border-bottom: 2px rgba(50,200,170,0) solid;
+  transition: 0.2s;
+  border-bottom: 2px rgba(50, 200, 170, 0) solid;
 }
 
 .menu-list a:hover {
   text-decoration: none;
   color: #222222;
   transition: 0.2s;
-  border-bottom: 2px rgba(50,200,170,1) solid;
+  border-bottom: 2px rgba(50, 200, 170, 1) solid;
 }
 
 #current {
@@ -87,7 +80,9 @@ _:-ms-fullscreen, :root .header {
 }
 
 .content {
-  margin: 0px 10% 0 10%;
+  clear: both;
+  width: 80%;
+  margin: 100px 10% 0 10%;
   overflow: hidden;
 }
 
@@ -139,20 +134,20 @@ _:-ms-fullscreen, :root .header {
 }
 
 .team hr {
-
+  width: 450px;
   border: solid #4d4d4d;
 }
 
 .team-member {
-
+  width: 250px;
   height: 360px;
   background: #9CD2C7;
   margin: 15px;
-
+  float: left;
 }
 
 .team-member img {
-
+  width: 250px;
   height: 250px;
 }
 
@@ -163,36 +158,38 @@ _:-ms-fullscreen, :root .header {
 
 .memberss {
   margin: 0 auto;
-
+  width: 1120px;
 }
 
 .contact {
-   text-align: center;
+  text-align: center;
   font-size: 20px;
   padding-bottom: 5px;
-margin: auto;
+  clear: both;
+  width: 300px;
+  margin: auto;
 }
 
 .form {
-   text-align: center;
+  text-align: center;
   font-size: 20px;
   padding-bottom: 5px;
-margin: auto;
+  clear: both;
+  width: 300px;
+  margin: auto;
 }
-
 
 .contact p {
   text-align: left;
-margin: 3px 0;
+  margin: 3px 0;
 }
 
 .contact h3 {
-font-size: 50px;
+  font-size: 50px;
 }
 
-
-
-input[type=text],select  {
+input[type=text], select {
+  width: 300px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -202,49 +199,30 @@ input[type=text],select  {
 }
 
 input[type=submit] {
-   padding:12px 120px;
-    background:#ccc;
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 8px;
-    font-size: 20px;
-    color: #4d4d4d;
- transition: 0.3s ease-in-out;
+  padding: 12px 120px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #4d4d4d;
+  transition: 0.3s ease-in-out;
 }
 
 #searchSubmit {
-   padding:5px 20px;
-    background:#ccc;
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 8px;
-    font-size: 1.25em;
-    color: #4d4d4d;
- transition: 0.3s ease-in-out;
-
-}
-#searchSubmit:hover {
-  background: #32C8AA;
+  padding: 5px 20px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1.25em;
+  color: #4d4d4d;
   transition: 0.3s ease-in-out;
-  box-shadow: 0px 3px 3px 1px #9d9d9d;
 }
 
-.link-button {
-   padding:20px 20px;
-   margin-bottom: 30px;
-    background:#ccc;
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 8px;
-    font-size: 1.25em;
-    color: #4d4d4d;
- transition: 0.3s ease-in-out;
-
-}
-.link-button:hover {
+#searchSubmit:hover {
   background: #32C8AA;
   transition: 0.3s ease-in-out;
   box-shadow: 0px 3px 3px 1px #9d9d9d;
@@ -255,7 +233,9 @@ input[type=submit]:hover {
   transition: 0.3s ease-in-out;
   box-shadow: 0px 3px 3px 1px #9d9d9d;
 }
+
 textarea {
+  width: 300px;
   height: 250px;
   padding: 12px 20px;
   margin: 8px 0;
@@ -267,11 +247,15 @@ textarea {
 }
 
 .news {
+  width: 65%;
+  float: left;
   padding: 10px 10px 10px 0;
   overflow: hidden;
 }
 
 .featured {
+  width: 35%;
+  float: left;
   padding: 10px 0;
   overflow: hidden;
 }
@@ -286,12 +270,12 @@ h2 {
   padding-bottom: 5px;
 }
 
-
 .featured h3 {
   padding: 5px;
 }
 
 .news-article {
+  width: 100%;
   height: 200px;
   background: #9CD2C7;
   overflow: hidden;
@@ -306,11 +290,14 @@ h2 {
 }
 
 .news-thumbnail {
+  float: left;
+  width: 200px;
   height: 200px;
 }
 
 .news-info {
   padding: 10px;
+  width: auto;
   overflow: auto;
 }
 
@@ -325,11 +312,13 @@ h2 {
 }
 
 .featured-article {
+  width: 47%;
   height: 200px;
   background: #9CD2C7;
   overflow: hidden;
   margin-bottom: 10px;
   transition: 0.3s ease-in-out;
+  float: left;
   margin-right: 3%
 }
 
@@ -340,7 +329,8 @@ h2 {
 }
 
 .featured-article h3 {
-  font-size: 1em;
+  font-size: 2vh;
+  /*vh = % of viewport height */
   margin: 5px;
   text-align: center;
 }
@@ -353,10 +343,12 @@ h2 {
 .footer {
   position: static;
   background: #7D7D7D;
+  width: 100%;
   height: 200px;
 }
 
 .footercontainer {
+  clear: both;
   width: 80%;
   margin: auto;
 }
@@ -392,6 +384,7 @@ h2 {
 }
 
 .footerheader {
+  width: 120px;
   border-bottom: 2px #32C8AA solid;
 }
 
@@ -400,28 +393,31 @@ h4 {
 }
 
 .sm-photos {
+  width: 120px;
   margin-top: 15px;
 }
 
 .sm-photos img {
+  float: left;
+  width: 32px;
   height: 32px;
   margin-right: 7px;
   margin-bottom: 7px;
 }
-.advice{
-  height: 80px;
+
+.advice {
+  width: 100%;
+  height: fit-content;
   background-color: #9CD2C7;
   margin-bottom: 20px;
   transition: 0.2s ease-in-out;
-
 }
 
 .advice-square {
   height: 80px;
+  width: 80px;
   background-color: #32C8AA;
   float: left;
-  width: 80px;
-
 }
 
 .advice-square p {
@@ -431,7 +427,7 @@ h4 {
   margin: 20px 0;
 }
 
-.advice-heading > p {
+.advice-heading>p {
   font-size: 1.7em;
   font-weight: bold;
   text-align: center;
@@ -443,12 +439,14 @@ h4 {
 }
 
 .article-heading-image {
+  width: 100%;
   height: 250px;
 }
 
 .advice-container {
   margin-left: 85px;
   height: 80px;
+  min-height: 80px;
   overflow: auto;
 }
 
@@ -475,11 +473,240 @@ h4 {
 }
 
 .video-left {
-
+  float: left;
+  clear: right;
 }
 
 .video-right {
+  float: right;
+  clear: right;
 }
 
 .video-block {
+  overflow: auto;
+}
+
+/*Header Styling for Mozilla*/
+@-moz-document url-prefix() {
+  .header {
+    background-color: rgba(215, 215, 215, 0.9) !important;
+  }
+}
+
+/*Header Styling for Safari*/
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+  @media {
+    .header {
+      background-color: rgba(215, 215, 215, 0.9) !important;
+    }
+  }
+}
+
+/*Header Styling for classic Edge*/
+@supports (-ms-ime-align:auto) {
+  .header {
+    background-color: rgba(215, 215, 215, 0.9) !important;
+  }
+}
+
+/*Header Styling for Internet Explorer*/
+_:-ms-fullscreen, :root .header {
+  background-color: rgba(215, 215, 215, 0.9) !important;
+}
+
+@media (max-width: 1010px) {
+  .menu a {
+    font-size: 2.5vw;
+  }
+
+  .header-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+    transition: 0.4s;
+  }
+
+  .footer {
+    height: fit-content;
+    overflow: auto;
+  }
+
+  #subfooter-centre {
+    position: inherit;
+  }
+
+  #subfooter-right {
+    float: none;
+  }
+
+  .subfooter {
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+  }
+
+  .subfooter ul {
+    margin-bottom: 0;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0;
+    margin-top: 100px;
+    transition: 0.4s;
+  }
+
+  .news, .featured {
+    padding: 10px 0 10px 10px;
+    transition: 0.4s;
+  }
+
+  .featured {
+    padding-right: 10px;
+    transition: 0.4s;
+  }
+
+  .featured-article {
+    clear: both;
+    width: 100%;
+    transition: 0.4s;
+  }
+
+  .news-article p {
+    font-size: 1.5vw;
+    transition: 0.4s;
+  }
+
+  .footer-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+    transition: 0.4s;
+}
+
+    .responsive-container {
+      padding: 10px;
+    }
+
+    .advice-container {
+      overflow: auto;
+      height: fit-content;
+    }
+
+}
+
+@media (max-width: 720px) {
+  .menu a {
+    font-size: 3vw;
+  }
+
+  .header-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  .header {
+    height: 110px;
+    position: sticky;
+    left: 0;
+    top: -70px;
+  }
+
+  .menu {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .menu-list {
+    padding: 0;
+    margin: 3px auto;
+  }
+
+  .logo {
+    clear: both;
+    float: none;
+    width: fit-content;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  .logo>a>img {
+    height: 60px;
+    width: auto;
+    margin: auto;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0;
+    margin-top: 0px;
+  }
+
+  .news, .featured {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .featured {
+    clear: both;
+  }
+
+  .featured-article {
+    clear: none;
+    float: left;
+    width: 47%;
+    margin: 5px;
+  }
+
+  .news-article p {
+    font-size: 2.1vw;
+  }
+
+  .footer-container {
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 350px){
+  .menu a {
+    font-size: 3vw;
+  }
+
+  .header {
+    height: 90px;
+    position: sticky;
+    left: 0;
+    top: -55px;
+  }
+
+  .content {
+    margin-top: 0px;
+  }
+
+  .news-thumbnail {
+    width: 130px;
+    height: 130px;
+  }
+
+  .news-article {
+    height: 130px;
+  }
+
+  .news-article h2 {
+    font-size: 1em;
+  }
+
+  .featured-article {
+    margin: 1.4vw;
+  }
+
+  .logo>a>img {
+    height: 40px;
+    width: auto;
+    margin: auto;
+  }
 }

@@ -10,46 +10,45 @@ body {
   scroll-behavior: smooth;
 }
 
-
 .header {
-  width: 100%;
   background-color: rgba(215, 215, 215, 0.6);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  height: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
+  padding: 0;
 }
 
-.header-container {
-  width: 80%;
-  margin: 0 10%;
-}
-
-.logo {
-  float: left;
-}
-
-.logo>a>img {
+.logo img {
   height: 90px;
   margin: 5px 0;
 }
 
-.menu {
-  float: right;
-  margin: 20px 0 auto 0;
+@media screen and (max-width: 700px) {
+  .logo img {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .side-padding-ow {
+    padding: 0 !important;
+  }
+}
+
+.side-padding-ow-always {
+  padding: 0 !important;
+}
+
+.padding-ow {
+  padding: 0 10px;
 }
 
 .menu-list {
-  width: fit-content;
   list-style: none;
   clear: both;
 }
 
 .menu-list li {
-  float: left;
   padding: 5px;
   margin: 0 5px;
 }
@@ -77,17 +76,7 @@ body {
 }
 
 .content {
-  clear: both;
-  width: 80%;
-  margin: 100px 10% 0 10%;
   overflow: hidden;
-}
-
-.content-heading {
-  height: 250px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("../images/content-heading.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contact-heading {
@@ -103,12 +92,6 @@ body {
   background-image: url("");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.content-heading>h1 {
-  color: #ffffff;
-  padding: 110px 30px;
-  margin-top: 0;
 }
 
 .contact-heading>h1 {
@@ -244,16 +227,18 @@ textarea {
 }
 
 .news {
-  width: 65%;
+  padding: 0 10px 0 0;
   float: left;
-  padding: 10px 10px 10px 0;
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px){
+  .news {
+    padding: 0;
+  }
+}
+
 .featured {
-  width: 35%;
-  float: left;
-  padding: 10px 0;
   overflow: hidden;
 }
 
@@ -293,7 +278,6 @@ h2 {
 }
 
 .news-info {
-  padding: 10px;
   width: auto;
   overflow: auto;
 }
@@ -313,10 +297,9 @@ h2 {
   height: 200px;
   background: #9CD2C7;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0px !important;
   transition: 0.3s ease-in-out;
   float: left;
-  margin-right: 3%
 }
 
 .featured-article:hover {
@@ -327,7 +310,6 @@ h2 {
 
 .featured-article h3 {
   font-size: 2vh;
-  /*vh = % of viewport height */
   margin: 5px;
   text-align: center;
 }

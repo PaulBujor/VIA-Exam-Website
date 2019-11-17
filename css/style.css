@@ -53,6 +53,12 @@ body {
   margin: 0 5px;
 }
 
+
+
+
+
+
+
 .menu-list a {
   text-decoration: none;
   font-size: 1.4em;
@@ -283,12 +289,12 @@ h2 {
 }
 
 .news-link {
-  text-decoration: none;
+  text-decoration: none !important;
   overflow: auto;
 }
 
 .featured-link {
-  text-decoration: none;
+  text-decoration: none !important;
   overflow: auto;
 }
 
@@ -299,6 +305,10 @@ h2 {
   margin: 0 0 10px 0px !important;
   transition: 0.3s ease-in-out;
   float: left;
+}
+
+.spacer {
+  width: 10px;
 }
 
 .featured-article:hover {
@@ -490,4 +500,9 @@ h4 {
 /*Header Styling for Internet Explorer*/
 _:-ms-fullscreen, :root .header {
   background-color: rgba(215, 215, 215, 0.9) !important;
+}
+
+.test {
+  background: pink;
+  height: 350px;
 }

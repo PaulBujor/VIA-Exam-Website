@@ -40,14 +40,40 @@
     </div>
   </div>
 
+<body>
+<div id="anotherdiv">
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class = "d-block img-fluid mx-auto" src="images/st.jpg" alt="Via students">
+    </div>
+    <div class="carousel-item">
+      <img class = "d-block img-fluid mx-auto" src="images/front.jpg" alt="front-of-university">
+    </div>
+    <div class="carousel-item">
+      <img class = "d-block img-fluid mx-auto" src="images/inside.jpg" alt="inside-the-university">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+
   <div class="col-sm-12 content">
     <div class="content-container col-sm-12 col-lg-10 offset-lg-1 side-padding-ow" class="transition-container">
-
-      <div id="home-carousel" class="carousel slide" data-ride="carousel">
-        <a href="https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp" target="_blank">make carousel here</a>
-      </div>
-
-      <div class="col-lg-8 col-md-9 news">
+      <div class="col-md-9 news">
         <h2>News</h2>
 
         <a class="news-link" href="news-article/index.html">
@@ -95,20 +121,22 @@
         </a>
 
       </div>
-      <div class="col-lg-4 col-md-3 featured side-padding-ow-always">
+      <div class="col-md-3 featured side-padding-ow-always">
         <h2>Featured</h2>
 
         <a class="featured-link" href="news-article/index.html">
-          <div class="col-sm-6 col-md-12 col-lg-6 featured-article side-padding-ow-always">
+          <div class="col-sm-12 featured-article side-padding-ow-always">
             <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
             <div class="featured-info">
               <h3>Featured Article Title</h3>
             </div>
+            <span class="spacer"></span>
           </div>
+
         </a>
 
         <a class="featured-link" href="news-article/index.html">
-          <div class="col-sm-6 col-md-12 col-lg-6 featured-article side-padding-ow-always">
+          <div class="col-sm-12 featured-article side-padding-ow-always">
             <img class="featured-thumbnail" src="images/article-thumbnail.jpg" alt="Thumbnail">
             <div class="featured-info">
               <h3>Featured Article Title</h3>

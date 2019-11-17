@@ -289,12 +289,12 @@ h2 {
 }
 
 .news-link {
-  text-decoration: none;
+  text-decoration: none !important;
   overflow: auto;
 }
 
 .featured-link {
-  text-decoration: none;
+  text-decoration: none !important;
   overflow: auto;
 }
 

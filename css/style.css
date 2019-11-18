@@ -414,7 +414,7 @@ h4 {
 }
 
 .advice-square {
-  height: 80px;
+  height: 100%;
   width: 80px;
   background-color: #32C8AA;
   float: left;

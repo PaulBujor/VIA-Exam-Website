@@ -7,6 +7,14 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+table tr td:nth-child(2) {
+    background-color: red;
+    
+}
+tr:nth-child(even)
+{background: #CCC}
+tr:nth-child(odd) 
+{background: #FFF}
 td,th{
     height: 50px;
 }
@@ -19,8 +27,10 @@ td,th{
 }
 .arrows-month{
     overflow: hidden;
-    clear: both;  left: 38%; margin-bottom: 5px;
-    position:relative;
+    clear: both;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
 .arrows-month > #leftarrow, .arrows-month > h2 {
@@ -37,14 +47,17 @@ td,th{
 }
 .arrows-month img{
   margin-top: 5px;
+    
 }
 
 .div-table{
     margin-bottom: 80px;
+    overflow-x: auto;
 }
 .buttons{
     cursor: pointer;
     background-color: #D7D7D7;
      border: none;
     float: left;
+    z-index: 2;
 }

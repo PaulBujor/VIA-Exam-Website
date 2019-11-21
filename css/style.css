@@ -512,11 +512,9 @@ h4 {
 
 /*Header Styling for Safari*/
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
-  @media {
     .header {
       background-color: rgba(215, 215, 215, 0.9) !important;
     }
-  }
 }
 
 /*Header Styling for classic Edge*/
